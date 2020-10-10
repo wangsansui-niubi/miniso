@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名创优品官方商城—购物车</title>
+  <link rel="stylesheet" href="css/cart.min.css">
+</head>
+<body>
+  <!-- header -->
+  <div class="x-header">
+    <div class="headerTop">
+      <div class="x-main">
+        <div class="topLeft">
+          <span>名创优品 - 爱生活 爱miniso</span>
+        </div>
+        <div class="topRight">
+          <div class="login">
+            <span><a href="load.html">登录</a></span>
+            <span><a href="regist.html">注册</a></span>
+          </div>
+          <ul>
+            <li><a href="#">订单管理</a></li>
+            <li><a href="#">在线客服</a></li>
+            <li><a href="#">帮助中心</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="headerBottom">
+      <div class="x-main">
+        <div class="top">
+          <div class="logo">
+            <a href=""><img src="https://s1.miniso.cn/bsimg/ec/public/images/2a/19/2a1937b510d45ab1c1a2d6e9e811e043.png" alt=""></a>
+          </div>
+          <div class="search">
+            <div class="searchForm">
+              <form action="">
+                <button class="searchBtn"></button>
+                <input type="text" name="search_keywords" placeholder="输入关键词寻找宝贝">
+              </form>
+            </div>
+          </div>
+          <div class="cart" onclick="location.href='cart.html'">
+            <div class="goods_num">0</div>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="navBox">
+            <ul class="navLeft">
+              <li><a href="index.html" class="active">首页</a></li>
+              <li><a href="">居家</a></li>
+              <li><a href="">餐厨</a></li>
+              <li><a href="">服装</a></li>
+              <li><a href="">美护</a></li>
+              <li><a href="">出行</a></li>
+              <li><a href="">电器</a></li>
+              <li><a href="">杂货</a></li>
+              <li><a href="">系列</a></li>
+            </ul>
+            <ul class="navRight">
+              <li><a href="">专题</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- main -->
+  <div class="x-main-box">
+    <div class="cart-box">
+      <div class="emptyCart">
+        <div class="rowBar">
+          <p>购物车空空的</p>
+          <div class="btnBox">
+            <button onclick="location.href='index.html'">去购买</button>
+          </div>
+        </div>
+      </div>
+      <div class="tipBar">
+        <div class="checkBox"></div>
+        <p class="selectAll">全选</p>
+        <p class="price">单价</p>
+        <p class="quantity">数量</p>
+        <p class="add">小计</p>
+      </div>
+      <div id="cart_list">
+        <ul class="cartList">
+          <li>
+            <div class="checkBox"></div>
+            <div class="imgbox">
+              <a href=""><img src="https://s1.miniso.cn/bsimg/ec/public/images/78/5f/785f6747dc69b3d431c6acb697854518.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150" alt=""></a>
+            </div>
+            <div class="goods_detail">
+              <a href="">4D草莓果汁软糖</a>
+            </div>
+            <div class="price">
+              <p>￥10</p>
+            </div>
+            <div class="count">
+              <span id="reduce"></span>
+              <input value="1">
+              <span id="plus"></span>
+            </div>
+            <div class="total">
+              <span>￥10</span>
+            </div>
+            <div class="del"></div>
+          </li>
+        </ul>
+      </div>
+      <div id="x-floor">
+        <div class="main-bottom">
+          <div class="checkBox"></div>
+          <p class="onSelect">已选<span>（0）</span></p>
+          <a href="" class="delAll">批量删除</a>
+          <a href="" class="clear">清除无效商品</a>
+          <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/explanation3.png" alt="">
+          <div class="detail">
+            <p>应付总额：<span>￥10</span></p>
+          </div>
+          <button>下单结算</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="x-footer">
+    <div class="footerTop">
+      <div class="ulBox">
+        <ul>
+          <li class="left">
+            <h1>服务热线</h1>
+            <h2>400-9965-022</h2>
+            <span>9:00 - 21:00</span>
+          </li>
+          <li class="middle">
+            <h1>名创优品品牌宣言</h1>
+            <p>名创优品旗下电商品牌，从名创优品</br>2000家线下旗舰店筛选最优秀的产品，</br>秉承从选料，设计，生产，检测都严苛</br>把控，只为把优质的商品送到你面前</p>
+          </li>
+          <li class="right">
+            <h1>扫码关注公众号</h1>
+            <br>
+            <img src="https://miniso-images.oss-cn-shenzhen.aliyuncs.com/bsimg/ec/public/images/be/aa/beaabf69fb119656ab7c1a03406c62ad.png" alt="">
+            <br>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerBottom">
+      <div class="bottomBox">
+        <div class="top">
+          <ul>
+            <li>
+              <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon1.png" alt="">
+              <span>名创优品，质量保证</span>
+            </li>
+            <li>
+              <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon2.png" alt="">
+              <span>全场满79元包邮</span>
+            </li>
+            <li>
+              <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon3.png" alt="">
+              <span>30天无理由退换</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li><a href="">常见问题</a></li>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">配送与验收</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">隐私政策</a></li>
+            <li><a href="">服务协议</a></li>
+            <li><a href="">备案号：粤ICP备15008399号-3</a></li>
+            <li><a href="">营业执照</a></li>
+            <li><a href="">食品经营许可证</a></li>
+          </ul>
+          <p>&copy;2019-2020&nbsp;MINISO&nbsp;&nbsp;&nbsp;&nbsp;为了更好的浏览体验，推荐您使用Chrome内核浏览器</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,349 @@
+html, body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 12px;
+  font-family: "Microsoft YaHei" !important; }
+
+ul, ol, li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 12px;
+  font-weight: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+a, u {
+  text-decoration: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+input, fieldset {
+  outline: none;
+  border: 0; }
+
+.clearfn:after {
+  content: "";
+  clear: both;
+  height: 0;
+  display: block;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clearfn {
+  zoom: 1; }
+
+.x-header {
+  height: 276px;
+  font-size: 12px; }
+  .x-header .headerTop {
+    height: 31px;
+    line-height: 31px;
+    color: #cccccc;
+    background-color: black; }
+    .x-header .headerTop .topLeft {
+      float: left; }
+      .x-header .headerTop .topLeft span {
+        margin-left: 128px; }
+    .x-header .headerTop .topRight {
+      float: right;
+      width: 332px;
+      margin-right: 140px; }
+      .x-header .headerTop .topRight .login {
+        float: left; }
+        .x-header .headerTop .topRight .login span a {
+          color: #cccccc; }
+        .x-header .headerTop .topRight .login a:nth-child(1) {
+          margin-right: 17px; }
+    .x-header .headerTop ul {
+      float: right;
+      height: 12px;
+      margin-top: 9px; }
+      .x-header .headerTop ul li {
+        line-height: 12px;
+        float: left;
+        border-left: 1px solid #5c5c5c;
+        padding: 0 16px 0; }
+        .x-header .headerTop ul li a {
+          color: #cccccc; }
+  .x-header .headerBottom {
+    height: 245px; }
+    .x-header .headerBottom .x-main {
+      width: 1090px;
+      height: 224px;
+      margin: 0 auto;
+      padding: 20px 0 1px;
+      position: relative;
+      background-color: #fff; }
+      .x-header .headerBottom .x-main .top {
+        height: 132px;
+        width: 1090px;
+        position: absolute; }
+        .x-header .headerBottom .x-main .top .logo {
+          width: 100px;
+          height: 128px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto; }
+          .x-header .headerBottom .x-main .top .logo a img {
+            width: 100%;
+            height: 100%; }
+        .x-header .headerBottom .x-main .top .search {
+          display: inline-block;
+          position: absolute;
+          top: 11px;
+          right: 61px; }
+          .x-header .headerBottom .x-main .top .search .searchForm {
+            width: 313px;
+            height: 36px; }
+            .x-header .headerBottom .x-main .top .search .searchForm form {
+              display: block; }
+              .x-header .headerBottom .x-main .top .search .searchForm form .searchBtn {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 7px;
+                left: 10px;
+                border: 0;
+                cursor: pointer;
+                border-radius: 3px;
+                background: url(../images/search.png) center center no-repeat #fff; }
+              .x-header .headerBottom .x-main .top .search .searchForm form input {
+                height: 34px;
+                width: 274px;
+                line-height: 34px;
+                border: 1px solid #999;
+                border-radius: 30px;
+                padding-left: 37px;
+                color: #999; }
+        .x-header .headerBottom .x-main .top .cart {
+          width: 35px;
+          height: 35px;
+          display: inline-block;
+          position: absolute;
+          top: 18px;
+          right: 12px;
+          cursor: pointer;
+          background: url(../images/cart.png) 10px 0 no-repeat; }
+          .x-header .headerBottom .x-main .top .cart .goods_num {
+            min-width: 18px;
+            height: 18px;
+            box-sizing: border-box;
+            padding: 0 2px;
+            color: #fff;
+            text-align: center;
+            border-radius: 20px;
+            background-color: #d9232e;
+            position: absolute;
+            top: -10px;
+            right: -10px; }
+      .x-header .headerBottom .x-main .nav {
+        height: 93px;
+        margin-top: 133px;
+        box-sizing: border-box;
+        padding: 30px 0; }
+        .x-header .headerBottom .x-main .nav .navBox {
+          width: 756px;
+          height: 32px;
+          margin-left: 106px; }
+          .x-header .headerBottom .x-main .nav .navBox .navLeft li {
+            float: left;
+            box-sizing: border-box;
+            padding: 0 28px; }
+            .x-header .headerBottom .x-main .nav .navBox .navLeft li .active {
+              color: #d9232e;
+              border-bottom: 2px solid #d9232e; }
+            .x-header .headerBottom .x-main .nav .navBox .navLeft li a {
+              font-size: 14px;
+              font-weight: 900;
+              color: #333333;
+              padding-bottom: 9px;
+              line-height: 20px; }
+              .x-header .headerBottom .x-main .nav .navBox .navLeft li a:hover {
+                color: #d9232e;
+                border-bottom: 2px solid #d9232e; }
+          .x-header .headerBottom .x-main .nav .navBox .navRight {
+            height: 20px;
+            border-left: 1px solid #ccc;
+            float: right;
+            position: relative;
+            top: -20px;
+            left: 88px; }
+            .x-header .headerBottom .x-main .nav .navBox .navRight li {
+              box-sizing: border-box;
+              padding: 0 28px; }
+              .x-header .headerBottom .x-main .nav .navBox .navRight li a {
+                font-size: 14px;
+                font-weight: 900;
+                color: #333333;
+                padding-bottom: 9px; }
+                .x-header .headerBottom .x-main .nav .navBox .navRight li a:hover {
+                  color: #d9232e;
+                  border-bottom: 2px solid #d9232e; }
+
+.signIn {
+  height: 363px;
+  padding: 110px 0; }
+  .signIn .main {
+    width: 1090px;
+    margin: 0 auto; }
+    .signIn .main .imgBox {
+      height: 360px;
+      float: left;
+      margin-right: 30px; }
+    .signIn .main .signInBox {
+      width: 431px;
+      height: 360px;
+      padding-left: 36px;
+      border-left: 1px solid #eee;
+      position: relative;
+      float: left; }
+      .signIn .main .signInBox p {
+        padding-bottom: 27px;
+        font-size: 18px; }
+      .signIn .main .signInBox input {
+        box-sizing: border-box;
+        padding-left: 9px;
+        width: 100%;
+        height: 33px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        margin-bottom: 20px; }
+      .signIn .main .signInBox .err-msg {
+        height: 52px;
+        background-color: pink;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        line-height: 40px;
+        display: none; }
+      .signIn .main .signInBox .err-msg-danger {
+        color: red; }
+      .signIn .main .signInBox .err-msg-success {
+        color: green; }
+      .signIn .main .signInBox .agree {
+        width: 380px;
+        height: 30px;
+        margin-top: 18px; }
+        .signIn .main .signInBox .agree #check {
+          width: 16px;
+          height: 16px;
+          margin-top: 7px;
+          margin-bottom: 0; }
+        .signIn .main .signInBox .agree span {
+          padding-left: 8px;
+          color: #333;
+          line-height: 24px; }
+        .signIn .main .signInBox .agree a {
+          color: #6699CC; }
+      .signIn .main .signInBox button {
+        width: 100%;
+        height: 48px;
+        background-color: #d9232e;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        font-size: 18px; }
+
+.x-footer {
+  height: 488px; }
+  .x-footer .footerTop {
+    height: 278px;
+    border-top: 1px solid grey; }
+    .x-footer .footerTop .ulBox {
+      height: 278px;
+      width: 1090px;
+      margin: 0 auto; }
+      .x-footer .footerTop .ulBox ul li {
+        float: left; }
+      .x-footer .footerTop .ulBox ul .left {
+        margin: 55px 0 0 54px;
+        text-align: center; }
+        .x-footer .footerTop .ulBox ul .left h1 {
+          font-size: 16px;
+          font-weight: 100;
+          color: #333; }
+        .x-footer .footerTop .ulBox ul .left h2 {
+          font-size: 24px;
+          line-height: 24px;
+          margin: 31px 0 22px;
+          color: #333; }
+        .x-footer .footerTop .ulBox ul .left span {
+          font-size: 14px;
+          color: #333; }
+      .x-footer .footerTop .ulBox ul .middle {
+        height: 170px;
+        padding: 0 97px 0 91px;
+        border-left: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+        margin: 55px 91px 0 104px;
+        float: left; }
+        .x-footer .footerTop .ulBox ul .middle h1 {
+          font-size: 16px;
+          font-weight: 100;
+          color: #333;
+          text-align: center; }
+        .x-footer .footerTop .ulBox ul .middle p {
+          font-size: 14px;
+          margin: 28px 0 0;
+          color: #333;
+          text-align: center; }
+      .x-footer .footerTop .ulBox ul .right {
+        display: block;
+        margin-top: 55px; }
+        .x-footer .footerTop .ulBox ul .right h1 {
+          font-size: 16px;
+          font-weight: 100;
+          color: #333;
+          text-align: center; }
+        .x-footer .footerTop .ulBox ul .right img {
+          margin-left: 5px; }
+  .x-footer .footerBottom {
+    height: 210px;
+    background-color: #414141; }
+    .x-footer .footerBottom .bottomBox {
+      height: 210px;
+      width: 1090px;
+      margin: 0 auto; }
+      .x-footer .footerBottom .bottomBox .top {
+        height: 121px;
+        border-bottom: 1px solid #8e8e8e;
+        margin: 0 auto; }
+        .x-footer .footerBottom .bottomBox .top ul {
+          height: 80px;
+          margin-left: 70px;
+          padding-top: 40px;
+          color: #fff;
+          font-size: 18px;
+          line-height: 55px; }
+          .x-footer .footerBottom .bottomBox .top ul li {
+            width: 340px;
+            float: left; }
+            .x-footer .footerBottom .bottomBox .top ul li span {
+              margin-left: 20px; }
+      .x-footer .footerBottom .bottomBox .bottom {
+        height: 89px;
+        margin: 0 auto;
+        text-align: center; }
+        .x-footer .footerBottom .bottomBox .bottom ul {
+          height: 40px;
+          width: 738px;
+          padding: 26px 0 0 178px; }
+          .x-footer .footerBottom .bottomBox .bottom ul li {
+            float: left;
+            padding: 0 7px; }
+            .x-footer .footerBottom .bottomBox .bottom ul li a {
+              color: #fff; }
+        .x-footer .footerBottom .bottomBox .bottom p {
+          color: #fff; }

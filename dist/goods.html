@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品详情</title>
+  <link rel="stylesheet" href="./css/goods.min.css">
+  <script src="./js/jquery-1.11.3.js"></script>
+  <script>
+    $(function(){
+      $(".small")
+      .mouseenter(function(){
+        $(".mark,.big").show();
+      })
+      .mouseleave(function(){
+        $(".mark,.big").hide();
+      })
+      .mousemove(function(ev){
+        var l = ev.pageX - $(this).offset().left - 75;
+        var t = ev.pageY - $(this).offset().top - 75;
+
+        l = Math.max(0,l)
+        l = Math.min(250,l)
+        t = Math.max(0,t)
+        t = Math.min(250,t)
+
+        $(".mark").css({
+          left:l,
+          top:t
+        })
+
+        $(".big img").css({
+          left:-2 * l,
+          top:-2 * t
+        })
+      })
+    })
+  </script>
+</head>
+<body>
+  <!-- header -->
+  <div class="x-header">
+    <div class="headerTop">
+      <div class="x-main">
+        <div class="topLeft">
+          <span>名创优品 - 爱生活 爱miniso</span>
+        </div>
+        <div class="topRight">
+          <div class="login">
+            <span><a href="#">登录</a></span>
+            <span><a href="#">注册</a></span>
+          </div>
+          <ul>
+            <li><a href="#">订单管理</a></li>
+            <li><a href="#">在线客服</a></li>
+            <li><a href="#">帮助中心</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="headerBottom">
+      <div class="x-main">
+        <div class="top">
+          <div class="logo">
+            <a href=""><img src="https://s1.miniso.cn/bsimg/ec/public/images/2a/19/2a1937b510d45ab1c1a2d6e9e811e043.png" alt=""></a>
+          </div>
+          <div class="search">
+            <div class="searchForm">
+              <form action="">
+                <button class="searchBtn"></button>
+                <input type="text" name="search_keywords" placeholder="输入关键词寻找宝贝">
+              </form>
+            </div>
+          </div>
+          <div class="cart">
+            <div class="goods_num">0</div>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="navBox">
+            <ul class="navLeft">
+              <li><a href="" class="active">首页</a></li>
+              <li><a href="">居家</a></li>
+              <li><a href="">餐厨</a></li>
+              <li><a href="">服装</a></li>
+              <li><a href="">美护</a></li>
+              <li><a href="">出行</a></li>
+              <li><a href="">电器</a></li>
+              <li><a href="">杂货</a></li>
+              <li><a href="">系列</a></li>
+            </ul>
+            <ul class="navRight">
+              <li><a href="">专题</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <div class="whiteBox">
+    <div class="nav"></div>
+    <div class="main">
+      <div class="main-left">
+        <div class="small">
+          <img src="https://s1.miniso.cn/bsimg/ec/public/images/44/17/4417251a049932f0c3aaa067da73779b.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150" alt="">
+          <div class="mark"></div>
+        </div>
+        <div class="big">
+          <img src="https://s1.miniso.cn/bsimg/ec/public/images/44/17/4417251a049932f0c3aaa067da73779b.jpg?x-oss-process=image/resize,m_lfit,h_150,w_150" alt="">
+        </div>
+      </div>
+      <div class="main-right">
+        <h1>北欧风系列磨砂圆瓶香薰</h1>
+        <p>香奈儿原料供应商</p>
+        <div class="x-row">
+          <div class="price">
+            <span>售价</span>
+            <div>￥29.9</div>
+          </div>
+          <div class="serve">
+            <span>服务</span>
+            <ul>
+              <li>30天无忧退换货</li>
+              <li>48小时退款</li>
+              <li>满79元包邮</li>
+              <li>优品全球甄选</li>
+            </ul>
+          </div>
+        </div>
+        <div class="choose">
+          <div class="selectNum">
+            <h2>数量</h2>
+            <div class="count">
+              <span class="reduce">-</span>
+              <input type="text" value="1">
+              <span class="plus">+</span>
+            </div>
+          </div>
+        </div>
+        <div class="buttonBox">
+          <button class="buy">立即购买</button>
+          <button class="toCar"><img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/cart2.png" alt="">加入购物车</button>
+          <button class="collect">收藏</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="x-footer">
+    <div class="footerTop">
+      <div class="ulBox">
+        <ul>
+          <li class="left">
+            <h1>服务热线</h1>
+            <h2>400-9965-022</h2>
+            <span>9:00 - 21:00</span>
+          </li>
+          <li class="middle">
+            <h1>名创优品品牌宣言</h1>
+            <p>名创优品旗下电商品牌，从名创优品</br>2000家线下旗舰店筛选最优秀的产品，</br>秉承从选料，设计，生产，检测都严苛</br>把控，只为把优质的商品送到你面前</p>
+          </li>
+          <li class="right">
+            <h1>扫码关注公众号</h1>
+            <br>
+            <img src="https://miniso-images.oss-cn-shenzhen.aliyuncs.com/bsimg/ec/public/images/be/aa/beaabf69fb119656ab7c1a03406c62ad.png" alt="">
+            <br>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerBottom">
+      <div class="bottomBox">
+        <div class="top">
+          <ul>
+            <li>
+              <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon1.png" alt="">
+              <span>名创优品，质量保证</span>
+            </li>
+            <li>
+              <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon2.png" alt="">
+              <span>全场满79元包邮</span>
+            </li>
+            <li>
+              <img src="http://m.miniso.cn/public/app/siteyx/statics/static/images/footerIcon3.png" alt="">
+              <span>30天无理由退换</span>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <ul>
+            <li><a href="">常见问题</a></li>
+            <li><a href="">售后服务</a></li>
+            <li><a href="">配送与验收</a></li>
+            <li><a href="">联系客服</a></li>
+            <li><a href="">隐私政策</a></li>
+            <li><a href="">服务协议</a></li>
+            <li><a href="">备案号：粤ICP备15008399号-3</a></li>
+            <li><a href="">营业执照</a></li>
+            <li><a href="">食品经营许可证</a></li>
+          </ul>
+          <p>&copy;2019-2020&nbsp;MINISO&nbsp;&nbsp;&nbsp;&nbsp;为了更好的浏览体验，推荐您使用Chrome内核浏览器</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
